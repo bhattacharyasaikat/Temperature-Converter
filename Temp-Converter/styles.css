@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(95.2deg, rgba(173, 252, 234, 1) 26.8%, rgba(192, 229, 246, 1) 64%);
+
+}
+
+.container-1 {
+    max-width: 550px;
+   
+    position: absolute;
+    top: 25%;
+  background-color: azure;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+ 
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+  ;
+
+}
+
+.ans {
+    position: absolute;
+    top: 50%;
+}
+.heading{
+    margin-bottom: 5%;
+}
+input {
+    width: 120px;
+    height: 25px;
+}
+label{
+    font-size: medium;
+}
+
+#ans1 {
+    width: 100%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    font-weight: 800;
+    color:black;
+
+}
+
+.res {
+    font-size: x-large;
+    margin-top: 3%;
+    margin-left: 35%;
+}
+
+.btn {
+    font-size: medium;
+    font-weight: 500;
+    margin-top: 10%;
+    background-color: azure;
+    width: 200px;
+    height: 35px;
+    transition: all;
+    transition-duration: 200ms;
+    margin-bottom: 7%;
+}
+.imgs{
+   position: absolute;
+
+   background-blend-mode: lighten;
+}
+.btn:hover {
+
+    box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #ccc;
+    cursor: pointer;
+}
+
+
+@media (max-width:500px) {
+   label{
+    display: block;
+    padding: 3px;
+   }
+   label,input,select{
+   
+    margin-left: 10px;
+   }
+   .btn{
+    margin-bottom: 4%;
+   }
+}

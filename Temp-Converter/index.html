@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+         
+        <!-- main content -->
+
+        <div class="container-1">
+  
+              <center> <h2 class="heading">Temperature Converter</h2></center> 
+
+            <label for="celcius">Select Unit</label>
+            <select name="temp_name" id="temp_name">
+                <option value="c" id="cel">Celcius</option>
+                <option value="f" id="far">Fahrenheit</option>
+            </select>
+           <label for="">Enter temperature</label>
+            <input type="number" name="temp_i" id="temp_input" placeholder="Enter Temperature">
+        </div>
+
+            <!-- Answer -->
+        <div class="ans">
+            <div>
+                <button class="btn" type="button" onclick="calculate()">Calculate</button>
+            </div>
+
+            <div class="res">
+                <span id="ans1"></span>
+            </div>
+        </div>
+ 
+     
+    </div>
+
+
+  
+</body>
+
+
+</html>
